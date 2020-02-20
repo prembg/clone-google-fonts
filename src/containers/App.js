@@ -12,8 +12,8 @@ class App extends Component {
     this.state = {
       fonts: [],
       searchfield: '',
-      textfield: 'Text1',
-      size: '40'
+      textfield: 'Then came the night of the first falling star',
+      size: '40px'
     }
   }
 
@@ -32,7 +32,11 @@ class App extends Component {
   }
 
   onSearchReset = () => {
-    this.setState({searchfield: '', textfield: 'Text1' })
+    this.setState({searchfield: '', textfield: 'Then came the night of the first falling star' })
+  }
+
+  onSizeValueChange = (event) => {
+    this.setState({size: event.target.value })
   }
 
   render() {
@@ -48,16 +52,14 @@ class App extends Component {
         <SearchMenu 
           searchChange={this.onSearchChange} 
           textChange={this.onTextChange} 
-          sizeChange={this.onFontSizeChange}
+          sizeChange={this.onSizeValueChange}
           searchReset={this.onSearchReset}
         />
-        <Scroll>
-          <CardList 
+        <CardList 
             fonts={filteredFonts} 
             textfield={textfield} 
-            size={this.state.size}
-          />
-        </Scroll>
+            size={size}
+          />        
         <Footer />
         </div>
       );
