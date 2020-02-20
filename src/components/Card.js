@@ -11,19 +11,22 @@ const Card = ({ family, textfield, size }) => {
 	const cardStyle = {
 		fontFamily: family,
 		fontSize: size,
-		height: "120px",
-		alignSelf: 'center'		
+		height: "120px",		
+		alignSelf: 'left',
+		
 	}
 
   return (
-    <div className='tc br3 pa3 ma2 dib bw2 shadow-5 fl w-30'>
+    <div className='bt pa3 ma2 b--light-silver fl w-auto'
+    	style={{width: "24rem"}}>
       
       <div>
-        <h2 className='f6 '>{family}</h2>
+        <h2 className='f6 fl'>{family}</h2>
 		         
 		        
 		        <br />
-		        <p style={cardStyle}>{textfield}</p>
+		        <p className='p3 pt4 tl'
+		        style={cardStyle}>{textfield}</p>
       </div>
     </div>
   );
