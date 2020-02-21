@@ -10,14 +10,14 @@ const CardList = ({ fonts, textfield, size}) => {
     <div className='pt6 center flex flex-wrap justify-center'>
       {
         fonts.map((user, i) => {
-        	if (i<10)       
-          {return (<Card 
+        	       
+          return (<Card 
                       key={i} 
                       family={fonts[i].family} 
                       textfield={textfield} 
                       size={size}
-          />)}
-       })
+          />)
+      })
       }
     </div>
   );
