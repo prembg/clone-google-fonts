@@ -1,5 +1,9 @@
 import React from 'react';
 import Card from './Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRedo } from '@fortawesome/free-solid-svg-icons'
+
+const element = <FontAwesomeIcon icon={faRedo} />
 
 const CardList = ({ fonts, textfield, size}) => {
   return (
