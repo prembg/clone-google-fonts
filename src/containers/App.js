@@ -48,21 +48,20 @@ class App extends Component {
       (
         <div className='tc'>
           <MainMenu />
-        <SearchMenu 
-          searchChange={this.onSearchChange} 
-          textChange={this.onTextChange} 
-          sizeChange={this.onSizeValueChange}
-          searchReset={this.onSearchReset}
-        />
-        <CardList 
+          <SearchMenu 
+            searchChange={this.onSearchChange} 
+            textChange={this.onTextChange} 
+            sizeChange={this.onSizeValueChange}
+            searchReset={this.onSearchReset}
+          />
+          <CardList 
             fonts={filteredFonts} 
             textfield={textfield} 
             size={size}
           />        
-        <Footer />
+          <Footer />
         </div>
       );
   }
 }
-
 export default App;
