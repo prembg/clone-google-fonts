@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CardList from '../components/CardList';
 import MainMenu from '../components/MainMenu.js';
 import SearchMenu from '../components/SearchMenu.js';
-import Scroll from '../components/Scroll';
 import Footer from '../components/Footer.js';
 import './App.css';
 
