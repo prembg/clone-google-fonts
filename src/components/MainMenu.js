@@ -3,7 +3,7 @@ import React from 'react';
 
 const MainMenu = () => {
 	return (
-		<div className='center bg-white w-100 top navigation'>
+		<div className='center bg-white w-100 top navigation pb3'>
 		<div>
       <nav className="db dt-l w-100 border-box pa3 ph5-l bb f5">
   <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" 

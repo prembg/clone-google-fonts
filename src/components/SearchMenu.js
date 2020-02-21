@@ -7,10 +7,10 @@ const element = <FontAwesomeIcon icon={faRedo} />
 const SearchMenu = ({searchfield, searchChange, textfield, textChange, sizeChange, size, searchReset}) => {
   const menuStyle = {    
     textAlign: 'center',
-    alignSelf: 'center',    
+    alignSelf: 'center',      
   }
 	return (
-		<div style={menuStyle} className='mt3 center bg-white w-100 dib mt2 navigation'>		  
+		<div style={menuStyle} className='mt5 center bg-white w-100 dib mt2 navigation'>		  
       <nav className="ma1 dib ba b--light-silver br-pill tc w-90 center flex justify-around">        
         <input className="f6 black-80 bw0 dib ma2 .w5 fl w-40" 
           type='search' 
